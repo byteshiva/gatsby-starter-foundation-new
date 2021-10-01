@@ -1,9 +1,9 @@
 ---
 template: index-page
 slug: /
-title: Wyatt Morriss
-tagline: Graphic Designer
-featuredImage: /assets/toa-heftiba-0rlfirsdvzu-unsplash.jpg
+title: Chinnayan K
+tagline: Founder
+featuredImage: /assets/trust_logo.png
 cta:
   ctaText: Know more
   ctaLink: /about

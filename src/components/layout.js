@@ -9,7 +9,7 @@ import Navigation from "./navigation"
 import "../assets/scss/style.scss"
 import Footer from "./footer"
 import Theme from "../components/theme"
-import Search from "../components/search"
+// import Search from "../components/search"
 
 const query = graphql`
   query LayoutQuery {
@@ -39,7 +39,7 @@ const Layout = ({ children, className, props }) => {
           <Navigation />
         </div>
         <div sx={layoutStyle.appearance}>
-          <Search searchIndex={siteSearchIndex.index} />
+          {/* <Search searchIndex={siteSearchIndex.index} /> */}
           <Theme />
         </div>
       </Header>
