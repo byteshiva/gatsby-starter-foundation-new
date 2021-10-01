@@ -24,7 +24,7 @@ import { FaWordpress, FaVk } from "react-icons/fa"
 import Layout from "../components/layout"
 // import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
-import Icons from "../util/socialmedia.json"
+// import Icons from "../util/socialmedia.json"
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
@@ -76,124 +76,124 @@ const HomePage = ({ data }) => {
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
-  const sIcons = Icons.socialIcons.map((icons, index) => {
-    return (
-      <div key={"social icons" + index}>
-        {icons.icon === "facebook" ? (
-          <Link to={icons.url} target="_blank">
-            <RiFacebookBoxFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "twitter" ? (
-          <Link to={icons.url} target="_blank">
-            <RiTwitterFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "linkedin" ? (
-          <Link to={icons.url} target="_blank">
-            <RiLinkedinBoxFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "youtube" ? (
-          <Link to={icons.url} target="_blank">
-            <RiYoutubeFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "instagram" ? (
-          <Link to={icons.url} target="_blank">
-            <RiInstagramFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "rss" ? (
-          <Link to={icons.url} target="_blank">
-            <RiRssFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "github" ? (
-          <Link to={icons.url} target="_blank">
-            <RiGithubFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "telegram" ? (
-          <Link to={icons.url} target="_blank">
-            <RiTelegramFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "pinterest" ? (
-          <Link to={icons.url} target="_blank">
-            <RiPinterestFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "snapchat" ? (
-          <Link to={icons.url} target="_blank">
-            <RiSnapchatFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "skype" ? (
-          <Link to={icons.url} target="_blank">
-            <RiSkypeFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "wordpress" ? (
-          <Link to={icons.url} target="_blank">
-            <FaWordpress />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "dribbble" ? (
-          <Link to={icons.url} target="_blank">
-            <RiDribbbleFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "medium" ? (
-          <Link to={icons.url} target="_blank">
-            <RiMediumFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "behance" ? (
-          <Link to={icons.url} target="_blank">
-            <RiBehanceFill />
-          </Link>
-        ) : (
-          ""
-        )}
-        {icons.icon === "vk" ? (
-          <Link to={icons.url} target="_blank">
-            <FaVk />
-          </Link>
-        ) : (
-          ""
-        )}
-      </div>
-    )
-  })
+  // const sIcons = Icons.socialIcons.map((icons, index) => {
+  //   return (
+  //     <div key={"social icons" + index}>
+  //       {icons.icon === "facebook" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiFacebookBoxFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "twitter" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiTwitterFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "linkedin" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiLinkedinBoxFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "youtube" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiYoutubeFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "instagram" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiInstagramFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "rss" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiRssFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "github" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiGithubFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "telegram" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiTelegramFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "pinterest" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiPinterestFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "snapchat" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiSnapchatFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "skype" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiSkypeFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "wordpress" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <FaWordpress />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "dribbble" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiDribbbleFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "medium" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiMediumFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "behance" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <RiBehanceFill />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //       {icons.icon === "vk" ? (
+  //         <Link to={icons.url} target="_blank">
+  //           <FaVk />
+  //         </Link>
+  //       ) : (
+  //         ""
+  //       )}
+  //     </div>
+  //   )
+  // })
   return (
     <Layout>
       <Seo />
@@ -224,14 +224,14 @@ const HomePage = ({ data }) => {
               <RiArrowRightSLine />
             </span>
           </Link>
-          <div
+          {/* <div
             className="social-icons"
             sx={{
               variant: "variants.socialIcons",
             }}
           >
             {sIcons}
-          </div>
+          </div> */}
         </div>
         <div>
           {Image ? (
