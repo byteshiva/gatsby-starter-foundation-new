@@ -34,7 +34,7 @@ const Layout = ({ children, className, props }) => {
         <Logo title={siteTitle} />
         <div sx={layoutStyle.nav}>
           <div sx={{ display: ["flex", "flex", "flex", "none"] }}>
-            <Search searchIndex={siteSearchIndex.index} />
+            {/* <Search searchIndex={siteSearchIndex.index} /> */}
           </div>
           <Navigation />
         </div>
