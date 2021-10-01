@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Chinnayan K
 tagline: Founder
-featuredImage: /assets/trust_logo3.png
+featuredImage: /assets/trust_logo4.png
 cta:
   ctaText: Know more
   ctaLink: /about
