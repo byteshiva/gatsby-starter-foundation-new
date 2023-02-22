@@ -1,7 +1,7 @@
 ---
 template: about-page
 slug: /about
-title: Empowering Communities: Our Story and Mission - Chinnayan Welfare and Charitable Trust
+title: Empowering Communities: Our Story and Mission Chinnayan Welfare and Charitable Trust
 ---
 
 Chinnayan Welfare and Charitable Trust is a non-profit organization dedicated to improving the lives of underprivileged individuals and communities. We believe that everyone deserves access to basic necessities such as education, healthcare, and clean water, and our mission is to work towards achieving these goals.
